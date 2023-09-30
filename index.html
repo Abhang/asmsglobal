@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="refresh" content="0;url=https://www.asmsglobal.com">
+  <meta charset="UTF-8">
+  <script>
+    // Redirect to newdomain.com with the same path
+    window.location.replace("https://www.asmsglobal.com" + window.location.pathname);
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=https://www.asmsglobal.com${window.location.pathname}">
+  </noscript>
+  <title>Redirecting...</title>
 </head>
 <body>
-<p>If you are not redirected, <a href="https://www.asmsglobal.com">click here</a>.</p>
+  <p>If you are not redirected, <a href="https://www.asmsglobal.com${window.location.pathname}">click here</a>.</p>
 </body>
 </html>
